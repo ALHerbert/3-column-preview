@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        
+        extend: {
+          fontFamily: {
+            'lexend-deca': ['"Lexend Deca"', "sans-serif"],
+            'big-shoulders-display': ['"Big Shoulders Display"', 'cursive']
+          },
+          colors: {
+            'bright-orange': '#DC872E',
+            'dark-cyan': '#006970',
+            'very-dark-cyan': '#004241',
+            //'transparent-white': hsla(0, 0%, 100%, 0.75), with with opacity 0.75
+            'very-light-gray': '#F2F2F2',
+          }
+        }
+      }
+    }
+  </script>
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+</head>
+<body class="font-lexend-deca text-[15px] leading-[25px] text-white flex flex-col items-center h-screen">
+  
+  <section class="bg-bright-orange flex flex-col py-[48px] px-[47px] w-[327px] rounded-t-[8px]">
+  <img src="images/icon-sedans.svg" class="w-[64px] h-[40px] mb-[35px]" />
+  <h2 class="font-big-shoulders-display font-bold text-very-light-gray text-[40px] leading-[48px] uppercase mb-[25px]">Sedans</h2>
+  <p class="opacity-75 mix-blend-normal mb-[25px]">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <button class="bg-very-light-gray rounded-[25px] w-[146px] h-[48px] border-none cursor-pointer text-bright-orange hover:border-2 hover:border-solid hover:border-white hover:bg-bright-orange">Learn More</button>
+  </section>
+
+  <section class="bg-dark-cyan flex flex-col py-[48px] px-[47px] w-[327px]">
+  <img src="images/icon-suvs.svg" class="w-[64px] h-[40px] mb-[35px]" />
+  <h2 class="font-big-shoulders-display font-bold text-very-light-gray text-[40px] leading-[48px] uppercase mb-[25px]">SUVs</h2>
+  <p class="opacity-75 mix-blend-normal mb-[25px]">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+  <button class="bg-very-light-gray rounded-[25px] w-[146px] h-[48px] border-none cursor-pointer text-dark-cyan hover:border-2 hover:border-solid hover:border-white hover:bg-dark-cyan">Learn More</button>
+  </section>
+
+  <section class="bg-very-dark-cyan flex flex-col py-[48px] px-[47px] w-[327px] rounded-b-[8px]">
+  <img src="images/icon-luxury.svg" class="w-[64px] h-[40px] mb-[35px]" />
+  <h2 class="font-big-shoulders-display font-bold text-very-light-gray text-[40px] leading-[48px] uppercase mb-[25px]">Luxury</h2>
+  <p class="opacity-75 mix-blend-normal mb-[25px]">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <button class="bg-very-light-gray rounded-[25px] w-[146px] h-[48px] border-none cursor-pointer text-very-dark-cyan hover:border-2 hover:border-solid hover:border-white hover:bg-very-dark-cyan">Learn More</button>
+  </section>
+</body>
+</html>
